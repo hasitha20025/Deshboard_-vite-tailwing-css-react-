@@ -6,6 +6,8 @@ import dot_3 from "./assets/Group-dot-3.svg";
 import grocery from "./assets/grocery.svg";
 import Transportation from "./assets/Transportation.svg";
 import Housing from "./assets/Housing.svg";
+import food_and_drink from "./assets/Food and Drink.svg";
+import Entertainment from "./assets/Entertainment.svg";
 
 
 
@@ -60,14 +62,14 @@ export default function Expenses() {
 
         <div className="flex flex-row mt-2">
           <div className="basis-1/2">
-            <p>Today</p>
+            <p className="font-medium">Today</p>
           </div>
           <div className="basis-1/2 ">
             <div className="flex justify-end">
               <img src={dot_3} className="mt-3" alt="..." />
             </div>
           </div>
-          <hr class="border border-black mt-4 mb-4" />
+          <hr class="h-0.5 border-t-2 bg-black" />
         </div>
 
         <div className="flex py-3 ">
@@ -106,6 +108,47 @@ export default function Expenses() {
           </div>
           <div className="flex-auto flex justify-end">
             <p className="font-medium">-185.750</p>
+          </div>
+        </div>
+
+
+        <div className="flex flex-row mt-10">
+          <div className="basis-1/2">
+            <p className="font-medium" >Monday, 23 March 2020</p>
+          </div>
+          <div className="basis-1/2 ">
+            <div className="flex justify-end">
+              <img src={dot_3} className="mt-3" alt="..." />
+            </div>
+          </div>
+          <hr class="border border-black mt-4 mb-4" />
+        </div>
+
+
+        <div className="flex py-3 ">
+          <div className="flex-none">
+            <img src={food_and_drink} alt="grocery-icon" />
+          </div>
+          <div className="flex-auto ml-4">
+            <p className="font-medium">Food and Drink</p>
+            <p className="text-slate-400">5:12 pm  •  Makan Steak</p>
+          </div>
+          <div className="flex-auto flex justify-end">
+            <p className="font-medium">-156.000</p>
+          </div>
+        </div>
+
+
+        <div className="flex py-3 ">
+          <div className="flex-none">
+            <img src={Entertainment} alt="grocery-icon" />
+          </div>
+          <div className="flex-auto ml-4">
+            <p className="font-medium">Entertainment</p>
+            <p className="text-slate-400">5:12 pm  •  Nonton Bioskop</p>
+          </div>
+          <div className="flex-auto flex justify-end">
+            <p className="font-medium">-35.200</p>
           </div>
         </div>
 
